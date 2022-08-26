@@ -1,0 +1,194 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/05/2018, 16:36:28
+    Author     : Alexandro
+*/
+
+/*
+#auto_load_tabela_div{
+
+    width: 700px;
+    margin-left: 60px;
+    margin-top:219px; 
+    opacity:0.9;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    
+   }
+
+
+
+Conteudo Tabela*/
+
+/*Fim Conteudo Tabela*/
+
+/*Conteudo Feeds
+#conteudo{
+    background-color: black;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:11;
+    background-color:#000;
+    width:100%;
+    height:100%;
+    
+}
+#texto-feed{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 10%;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    z-index:9999;  
+      
+      
+  }
+
+  #promo {
+
+    width:100px; 
+    height:100px; 
+    margin-left: 300px;
+
+  }
+  */
+/*Fim Conteudo Feeds*/
+
+#img_table {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+#texto-titulo-feed {
+  font-size: 50px;
+}
+#texto-corpo-feed {
+  font-size: 40px;
+}
+#auto_load_mensagem_div {
+  position: absolute;
+  bottom: 25px;
+  left: 240px;
+  font-size: x-large;
+  width: 300px;
+}
+#auto_load_tabela_div {
+  
+ 
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+}
+#promo {
+ 
+    
+
+}
+#img-promo {
+    margin-left: 50px;
+    margin-top: -50px;
+    width: 400px;
+    max-height: 400px;
+
+}
+#tabela-precos {
+
+
+    width: 1090px;
+    margin-left: 190px;
+    margin-top:119px; 
+    opacity:0.9;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+
+}
+#tabela-precos-promo{
+
+    margin-left: 6px;
+    width: 775px;
+    margin-top: 50px;
+
+}
+#preco-promo{
+
+
+    color: red;
+    margin-top: 190px;
+    margin-left: 220px;
+    font-size: 60px;
+    width: 280px;
+
+}
+/*Conteudo Feeds*/
+  #imgfeed{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+
+  }
+  #texto-feed{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 10%;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    z-index:9999;  
+      
+      
+  }
+  /* Imagem V
+  #imagem{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+*/
+/* Imagem Horizontal*/
+#imagem {
+	
+  position: fixed;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  width: 100vh;
+  height: 100vw;
+  margin-top: -100vw;
+  margin-left: -15px;
+  z-index: 0;
+  visibility: visible;
+}
+
+#video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  
+}

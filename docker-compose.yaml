@@ -1,0 +1,45 @@
+version: '3.3'
+
+services: 
+   vltv-client-app:
+      build: .
+      ports:
+        - "8081:80"
+      volumes: 
+        - ./:/var/www/html
+      networks:
+        - app-network
+        
+   mysql-app:   
+      image: mysql:5.6   
+      #command: --default-authentication-plugin=mysql_native_password
+      ports: 
+        - "3309:3306"
+      volumes: 
+        - .docker/dbdata:/var/lib/mysql
+      environment:
+        MYSQL_DATABASE: vltv_client
+        MYSQL_ROOT_PASSWORD: abc123@
+        
+      networks:
+        - app-network
+   app:
+      image: phpmyadmin/phpmyadmin:latest
+      links:
+        - mysql-app
+      ports:
+        - 8091:80
+      environment:
+        - PMA_ARBITRARY=1
+        - PMA_HOST=mysql-app
+        - UPLOAD_LIMIT=1000M
+        - MEMORY_LIMIT=2048M
+      networks:
+        - app-network
+      
+      
+networks: 
+    app-network: 
+      driver: bridge
+    
+
